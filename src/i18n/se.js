@@ -27,14 +27,31 @@ export const se = {
         h2: "Yayloh.com",
         p1: "Yayloh tillhandahåller ett system för hantering av returer för e-handlare. Som en del av ett team med 6 utvecklare bestod vårt arbete av frontend uppgifter i systemets digitala returformulär och systemets dashboard, där kunder hanterade statistik och data relaterat till returnerade varor. Applikationen är byggd i React med en Python backend.",
       },
-      work4: { h1: "2013 - 2019 Administratör", h2: "PostNord AB", p1: "" },
-      work5: {
-        h1: "2009 - 2011 Tryckpress operatör",
-        h2: "Intellecta tryckindustri AB",
-        p1: "",
+
+      work4: {
+        year: "2013 - 2019",
+        title: " Administratör",
+        place: "PostNord AB",
+        description: "Text Administratör",
       },
-      work6: { h1: "2004 - 2007 Terminalarbetare", h2: "PostNord AB", p1: "" },
-      work7: { h1: "2001 - 2003 Orginalare", h2: "Lowe Forever AB", p1: "" },
+      work5: {
+        year: "2009 - 2011",
+        title: " Tryckpressoperatör",
+        place: "Intellecta tryckindustri AB",
+        description: "Text Tryckpressoperatör",
+      },
+      work6: {
+        year: "2004 - 2007",
+        title: " Terminalarbetare",
+        place: "PostNord AB",
+        description: "Text Terminalarbetare",
+      },
+      work7: {
+        year: "2001 - 2003",
+        title: " Orginalare",
+        place: "Lowe Forever AB",
+        description: "Text orginalare",
+      },
     },
     education: {
       h1: "Utbildning.",

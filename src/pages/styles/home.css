@@ -8,7 +8,7 @@ h4 {
 
 p {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 p:last-child {
@@ -21,15 +21,15 @@ p:last-child {
 }
 
 .border {
-  min-width: 22px;
+  min-width: 18px;
 }
 
 .section-wrapper {
   display: flex;
   /* flex-direction: column; */
-  gap: 30px;
-  width: 80vw;
-  margin: 30px 0px 0px 30px;
+  gap: 20px;
+  width: 85vw;
+  margin: 30px 0px 0px 20px;
   padding: 0px;
 }
 
@@ -47,7 +47,7 @@ p:last-child {
 
 .work-headline {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
 }
@@ -68,16 +68,22 @@ p:last-child {
   display: flex;
   align-items: center;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.education-section-container {
+  display: flex;
+  flex-direction: column;
+  /* width: 80px; */
 }
 
 .project-wrapper {
   width: 80vw;
 }
 .project-text {
-  width: 40%;
+  width: 100%;
   padding: 2px 0px 20px 0px;
 }
 
@@ -97,10 +103,10 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 500px;
+  width: 80vw;
 }
 .project-video {
-  width: 500px;
+  width: 80vw;
   border-radius: 14px;
   padding: 2px 0px 20px 0px;
 }
@@ -112,7 +118,6 @@ p:last-child {
     font-size: 38px;
     margin: 5px 0px 0px 0px;
     padding-bottom: 10px;
-    background: red;
   }
 
   p {
@@ -185,7 +190,7 @@ p:last-child {
     width: 80vw;
   }
   .project-text {
-    width: 40%;
+    width: 500px;
     padding: 2px 0px 20px 0px;
   }
 
@@ -210,6 +215,14 @@ p:last-child {
   .project-video {
     width: 500px;
     border-radius: 14px;
-    padding: 2px 0px 20px 0px;
+    /* padding: 2px 0px 20px 0px; */
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .education-section-container {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
   }
 }

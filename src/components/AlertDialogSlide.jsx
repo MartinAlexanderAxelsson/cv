@@ -3,7 +3,15 @@ import "./styles/alertdialogslide.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Contact from "./Contact";
 import { useTranslation } from "react-i18next";
-import { IconButton, Stack, Dialog, DialogContent, Slide, Button, Box } from "@mui/material";
+import {
+  IconButton,
+  Stack,
+  Dialog,
+  DialogContent,
+  Slide,
+  Button,
+  Box,
+} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
@@ -47,13 +55,18 @@ export default function AlertDialogSlide() {
 
       <Dialog
         fullWidth
+        fullScreen={!matches}
         open={open}
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <Stack direction="row" alignItems={"center"} justifyContent={"flex-end"}>
+        <Stack
+          direction="row"
+          alignItems={"center"}
+          justifyContent={"flex-end"}
+        >
           <IconButton onClick={handleClose}>
             <CloseIcon />
           </IconButton>
