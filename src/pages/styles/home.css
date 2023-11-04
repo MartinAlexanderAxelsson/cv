@@ -223,6 +223,6 @@ p:last-child {
   .education-section-container {
     display: flex;
     flex-direction: row;
-    width: 80px;
+    width: 80vw;
   }
 }
