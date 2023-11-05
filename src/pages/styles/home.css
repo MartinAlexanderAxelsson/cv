@@ -1,14 +1,17 @@
 h4 {
-  font-family: "Sometype Mono", monospace;
+  font-family: "Sometype Mono";
   font-weight: 500;
   font-size: 35px;
   margin: 0px 0px 0px 0px;
   padding-bottom: 10px;
+  color: rgb(65, 65, 65);
 }
 
 p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: rgb(65, 65, 65);
 }
 
 p:last-child {
@@ -16,8 +19,9 @@ p:last-child {
 }
 
 .lines {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: -15px;
+  width: fit-content;
 }
 
 .border {
@@ -46,8 +50,10 @@ p:last-child {
 }
 
 .work-headline {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  /* font-family: "Inter", sans-serif; */
+  color: rgb(65, 65, 65);
+  font-family: "Roboto Mono";
+  font-size: 15px;
   font-weight: 600;
   margin-top: 20px;
 }
@@ -67,8 +73,10 @@ p:last-child {
 .other__work-headline {
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  color: rgb(65, 65, 65);
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Roboto Mono";
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -85,13 +93,16 @@ p:last-child {
 .project-text {
   width: 100%;
   padding: 2px 0px 20px 0px;
+  color: rgb(65, 65, 65);
+  font-family: "Roboto Mono";
+  font-size: 15px;
 }
 
 .project-link {
   display: flex;
   align-items: center;
-
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Roboto Mono";
   /* font-weight: bold; */
   color: rgb(0, 76, 118);
   cursor: pointer;
@@ -113,7 +124,6 @@ p:last-child {
 
 @media only screen and (min-width: 900px) {
   h4 {
-    font-family: "Sometype Mono", monospace;
     font-weight: 500;
     font-size: 38px;
     margin: 5px 0px 0px 0px;
@@ -121,7 +131,6 @@ p:last-child {
   }
 
   p {
-    font-family: "Inter", sans-serif;
     font-size: 14px;
   }
 
@@ -159,7 +168,6 @@ p:last-child {
   }
 
   .work-headline {
-    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 600;
     margin-top: 30px;
@@ -180,7 +188,6 @@ p:last-child {
   .other__work-headline {
     display: flex;
     align-items: center;
-    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -192,13 +199,12 @@ p:last-child {
   .project-text {
     width: 500px;
     padding: 2px 0px 20px 0px;
+    font-size: 14px;
   }
 
   .project-link {
     display: flex;
     align-items: center;
-
-    font-family: "Inter", sans-serif;
     /* font-weight: bold; */
     color: rgb(0, 76, 118);
     cursor: pointer;

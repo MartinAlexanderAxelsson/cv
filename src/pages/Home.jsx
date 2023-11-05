@@ -66,6 +66,14 @@ export default function Home() {
     setExpand((p) => ({ ...p, [section]: !p[section] }));
   };
 
+  const goToVideo = (video) => {
+    let url = `https://${video}.vongoo.se`;
+
+    if (matches_md) {
+      window.open(url, "_blank");
+    }
+  };
+
   return (
     <>
       <section className="intro">
@@ -360,10 +368,8 @@ export default function Home() {
               </div>
 
               <video
-                style={{ cursor: "pointer" }}
-                onClick={() =>
-                  window.open("https://scriptwave.vongoo.se", "_blank")
-                }
+                style={{ cursor: matches_md ? "pointer" : "default" }}
+                onClick={() => goToVideo("scriptwave")}
                 autoPlay
                 loop
                 muted={muted.scriptwave}
@@ -408,10 +414,8 @@ export default function Home() {
                 )}
               </div>
               <video
-                style={{ cursor: "pointer" }}
-                onClick={() =>
-                  window.open("https://scriptbeat.vongoo.se", "_blank")
-                }
+                style={{ cursor: matches_md ? "pointer" : "default" }}
+                onClick={() => goToVideo("scriptbeat")}
                 autoPlay
                 loop
                 muted={muted.scriptbeat}

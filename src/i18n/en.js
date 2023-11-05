@@ -3,7 +3,7 @@ export const en = {
     // component
     hello: {
       h1: "Hello.",
-      p1: "I am a curious and dedicated front-end developer, and I thrive on problem-solving challenges. I am passionate about building modern and user-friendly web applications, whether it ́s for an employer or personal projects. I spend a lot of my free time building various open source projects.",
+      p1: "I am a curious and dedicated front-end developer, and I thrive on problem-solving challenges. I am passionate about building modern and user-friendly web applications, whether it´s for an employer or personal projects. I spend a lot of my free time building various open source projects.",
       p2: "I am well versed in Javascript, CSS and SCSS and although I am currently working extensively in Aurelia, my main expertise is in React. I am an unpretentious and solution-oriented person and consider adaptability one of my strengths. Therefore I feel at home in a dynamic team environment in which mutual help and working towards a set goal is the common ground.",
       p3: "I have a good analytical ability, a curious mind and a great thirst for knowledge. I strive to constantly explore new techniques and broaden my knowledge base.",
     },
