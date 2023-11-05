@@ -1,7 +1,14 @@
+:root {
+  --fontSize-text-mobile: 14px;
+  --fontSize-text-desktop: 14px;
+  --fontSize-headline-mobile: 35px;
+  --fontSize-headline-desktop: 38px;
+}
+
 h4 {
   font-family: "Sometype Mono";
   font-weight: 500;
-  font-size: 35px;
+  font-size: var(--fontSize-headline-mobile);
   margin: 0px 0px 0px 0px;
   padding-bottom: 10px;
   color: rgb(65, 65, 65);
@@ -10,7 +17,7 @@ h4 {
 p {
   /* font-family: "Inter", sans-serif; */
   font-family: "Roboto Mono";
-  font-size: 15px;
+  font-size: var(--fontSize-text-mobile);
   color: rgb(65, 65, 65);
 }
 
@@ -53,7 +60,7 @@ p:last-child {
   /* font-family: "Inter", sans-serif; */
   color: rgb(65, 65, 65);
   font-family: "Roboto Mono";
-  font-size: 15px;
+  font-size: var(--fontSize-text-mobile);
   font-weight: 600;
   margin-top: 20px;
 }
@@ -76,7 +83,7 @@ p:last-child {
   color: rgb(65, 65, 65);
   /* font-family: "Inter", sans-serif; */
   font-family: "Roboto Mono";
-  font-size: 15px;
+  font-size: var(--fontSize-text-mobile);
   font-weight: 600;
   cursor: pointer;
 }
@@ -95,7 +102,7 @@ p:last-child {
   padding: 2px 0px 20px 0px;
   color: rgb(65, 65, 65);
   font-family: "Roboto Mono";
-  font-size: 15px;
+  font-size: var(--fontSize-text-mobile);
 }
 
 .project-link {
@@ -125,13 +132,13 @@ p:last-child {
 @media only screen and (min-width: 900px) {
   h4 {
     font-weight: 500;
-    font-size: 38px;
+    font-size: var(--fontSize-headline-desktop);
     margin: 5px 0px 0px 0px;
     padding-bottom: 10px;
   }
 
   p {
-    font-size: 14px;
+    font-size: var(--fontSize-text-desktop);
   }
 
   p:last-child {
@@ -168,7 +175,7 @@ p:last-child {
   }
 
   .work-headline {
-    font-size: 14px;
+    font-size: var(--fontSize-text-desktop);
     font-weight: 600;
     margin-top: 30px;
   }
@@ -188,7 +195,7 @@ p:last-child {
   .other__work-headline {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: var(--fontSize-text-desktop);
     font-weight: 600;
     cursor: pointer;
   }
@@ -199,7 +206,7 @@ p:last-child {
   .project-text {
     width: 500px;
     padding: 2px 0px 20px 0px;
-    font-size: 14px;
+    font-size: var(--fontSize-text-desktop);
   }
 
   .project-link {

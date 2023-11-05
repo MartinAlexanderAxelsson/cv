@@ -28,21 +28,24 @@ export const en = {
       },
       work4: {
         year: "2013 - 2019",
-        title: " Administrator",
+        title: " Administrator/teamleader",
         place: "PostNord AB",
-        description: "Text Administrator",
+        description:
+          "As an administrator/teamleader at PostNord Arlanda tasks included recruiting staff, staffplanning and maintaining our inhouse staffplanning system.",
       },
       work5: {
         year: "2009 - 2011",
         title: " Printing press operator",
         place: "Intellecta tryckindustri AB",
-        description: "Text Printing press operator",
+        description:
+          "At Intellecta i was operating a Heidelberg 8-color printingpress, printing for the most part monthly magazines.",
       },
       work6: {
         year: "2004 - 2007",
         title: " Terminalworker",
         place: "PostNord AB",
-        description: "Text Terminalworker",
+        description:
+          "Working as a terminalworker consisted of sorting and handling inbound mail from various countries.",
       },
       work7: {
         year: "2001 - 2003",

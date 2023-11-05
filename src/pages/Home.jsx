@@ -1,21 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles/home.css";
 import "./styles/intro.css";
 import martin from "../images/Martin.jpg";
 import scriptwaveVideo from "../video/Scriptwave_video.mp4";
 import scriptbeatVideo from "../video/Scriptbeat_video.mp4";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import {
+  ArrowDropDown,
+  ArrowDropUp,
+  ArrowForwardIos,
+  ArrowForward,
+  VolumeUp,
+  VolumeOff,
+  GitHub,
+  LinkedIn,
+} from "@mui/icons-material";
+
 import { Button, IconButton, Stack } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import AlertDialogSlide from "../components/AlertDialogSlide";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -115,7 +119,7 @@ export default function Home() {
                     }
                     size="small"
                     variant="contained"
-                    endIcon={<GitHubIcon />}
+                    endIcon={<GitHub />}
                   >
                     <b>Github</b>
                   </Button>
@@ -129,7 +133,7 @@ export default function Home() {
                     }
                     size="small"
                     variant="contained"
-                    endIcon={<LinkedInIcon />}
+                    endIcon={<LinkedIn />}
                   >
                     <b>LinkedIn</b>
                   </Button>
@@ -147,7 +151,7 @@ export default function Home() {
                   onClick={() => i18n.changeLanguage(lng)}
                 >
                   {i18n.resolvedLanguage === lng && (
-                    <ArrowForwardIosIcon sx={{ fontSize: 12 }} />
+                    <ArrowForwardIos sx={{ fontSize: 12 }} />
                   )}
                   {lngs[lng].nativeName}
                 </div>
@@ -233,31 +237,34 @@ export default function Home() {
                     {matches_sm ? (
                       <div>
                         {expand[`section${i}`] ? (
-                          <ArrowDropUpIcon />
+                          <ArrowDropUp />
                         ) : (
-                          <ArrowDropDownIcon />
+                          <ArrowDropDown />
                         )}
                       </div>
                     ) : (
                       <IconButton variant="contained">
                         {expand[`section${i}`] ? (
-                          <ArrowDropUpIcon fontSize="large" />
+                          <ArrowDropUp fontSize="large" />
                         ) : (
-                          <ArrowDropDownIcon fontSize="large" />
+                          <ArrowDropDown fontSize="large" />
                         )}
                       </IconButton>
                     )}
                   </div>
                   {expand[`section${i}`] && (
-                    <p className={`other__p-under-headline__${i}`}>
-                      {!matches_sm && (
-                        <>
-                          <b style={{ color: "#427E86" }}>{s.place}</b>
-                          <br />
-                        </>
-                      )}
-                      {s.description}
-                    </p>
+                    <Fade duration={1500} triggerOnce>
+                      <p className={`other__p-under-headline__${i}`}>
+                        {!matches_sm && (
+                          <>
+                            <b style={{ color: "#427E86" }}>{s.place}</b>
+                            <br />
+                          </>
+                        )}
+
+                        {s.description}
+                      </p>
+                    </Fade>
                   )}
                 </>
               );
@@ -336,93 +343,93 @@ export default function Home() {
             onClick={() => expandMenu("section4")}
           >
             Scriptwave
-            <div>
-              {expand.section4 ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-            </div>
+            <div>{expand.section4 ? <ArrowDropUp /> : <ArrowDropDown />}</div>
           </div>
           {expand.section4 && (
-            <div className="project-wrapper">
-              <div className="project-text">{t("projects.scriptwave")}</div>
-              <div className="project-link-wrapper">
-                <a
-                  target="_blank"
-                  href="https://scriptwave.vongoo.se"
-                  className="project-link"
-                >
-                  Scriptwave&nbsp;
-                  <ArrowForwardIcon sx={{ fontSize: 18 }} />
-                </a>
-                {muted.scriptwave ? (
-                  <IconButton
-                    onClick={() => setMuted({ ...muted, scriptwave: false })}
+            <Fade duration={1500} triggerOnce>
+              <div className="project-wrapper">
+                <div className="project-text">{t("projects.scriptwave")}</div>
+                <div className="project-link-wrapper">
+                  <a
+                    target="_blank"
+                    href="https://scriptwave.vongoo.se"
+                    className="project-link"
                   >
-                    <VolumeOffIcon />
-                  </IconButton>
-                ) : (
-                  <IconButton
-                    onClick={() => setMuted({ ...muted, scriptwave: true })}
-                  >
-                    <VolumeUpIcon />
-                  </IconButton>
-                )}
-              </div>
+                    Go to Scriptwave&nbsp;
+                    <ArrowForward sx={{ fontSize: 18 }} />
+                  </a>
+                  {muted.scriptwave ? (
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptwave: false })}
+                    >
+                      <VolumeOff />
+                    </IconButton>
+                  ) : (
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptwave: true })}
+                    >
+                      <VolumeUp />
+                    </IconButton>
+                  )}
+                </div>
 
-              <video
-                style={{ cursor: matches_md ? "pointer" : "default" }}
-                onClick={() => goToVideo("scriptwave")}
-                autoPlay
-                loop
-                muted={muted.scriptwave}
-                className="project-video"
-                src={scriptwaveVideo}
-              />
-            </div>
+                <video
+                  style={{ cursor: matches_md ? "pointer" : "default" }}
+                  onClick={() => goToVideo("scriptwave")}
+                  autoPlay
+                  loop
+                  muted={muted.scriptwave}
+                  className="project-video"
+                  src={scriptwaveVideo}
+                />
+              </div>
+            </Fade>
           )}
           <div
             className="other__work-headline"
             onClick={() => expandMenu("section5")}
           >
             Scriptbeat
-            <div>
-              {expand.section5 ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-            </div>
+            <div>{expand.section5 ? <ArrowDropUp /> : <ArrowDropDown />}</div>
           </div>
           {expand.section5 && (
-            <div className="project-wrapper">
-              <div className="project-text">{t("projects.scriptbeat")}</div>
-              <div className="project-link-wrapper">
-                <a
-                  target="_blank"
-                  href="https://scriptbeat.vongoo.se"
-                  className="project-link"
-                >
-                  Scriptbeat&nbsp;
-                  <ArrowForwardIcon sx={{ fontSize: 18 }} />
-                </a>
-                {muted.scriptbeat ? (
-                  <IconButton
-                    onClick={() => setMuted({ ...muted, scriptbeat: false })}
+            <Fade duration={1500}>
+              <div className="project-wrapper">
+                <div className="project-text">{t("projects.scriptbeat")}</div>
+                <div className="project-link-wrapper">
+                  <a
+                    target="_blank"
+                    href="https://scriptbeat.vongoo.se"
+                    className="project-link"
                   >
-                    <VolumeOffIcon />
-                  </IconButton>
-                ) : (
-                  <IconButton
-                    onClick={() => setMuted({ ...muted, scriptbeat: true })}
-                  >
-                    <VolumeUpIcon />
-                  </IconButton>
-                )}
+                    Go to Scriptbeat&nbsp;
+                    <ArrowForward sx={{ fontSize: 18 }} />
+                  </a>
+                  {muted.scriptbeat ? (
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptbeat: false })}
+                    >
+                      <VolumeOff />
+                    </IconButton>
+                  ) : (
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptbeat: true })}
+                    >
+                      <VolumeUp />
+                    </IconButton>
+                  )}
+                </div>
+                <video
+                  style={{ cursor: matches_md ? "pointer" : "default" }}
+                  onClick={() => goToVideo("scriptbeat")}
+                  autoPlay
+                  loop
+                  muted={muted.scriptbeat}
+                  className="project-video"
+                  src={scriptbeatVideo}
+                />
               </div>
-              <video
-                style={{ cursor: matches_md ? "pointer" : "default" }}
-                onClick={() => goToVideo("scriptbeat")}
-                autoPlay
-                loop
-                muted={muted.scriptbeat}
-                className="project-video"
-                src={scriptbeatVideo}
-              />
-            </div>
+            </Fade>
           )}
         </div>
       </section>
