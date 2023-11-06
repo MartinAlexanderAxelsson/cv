@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./styles/home.css";
 import "./styles/intro.css";
 import martin from "../images/Martin.jpg";
@@ -13,18 +13,22 @@ import {
   VolumeOff,
   GitHub,
   LinkedIn,
+  Download,
 } from "@mui/icons-material";
-
 import { Button, IconButton, Stack } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import AlertDialogSlide from "../components/AlertDialogSlide";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Fade } from "react-awesome-reveal";
+import Pdf from "./Pdf";
+import generatePDF from "react-to-pdf";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
+
   const matches_sm = useMediaQuery("(min-width:600px)");
   const matches_md = useMediaQuery("(min-width:900px)");
+
   const lngs = {
     en: { nativeName: "ENG" },
     se: { nativeName: "SWE" },
@@ -67,6 +71,21 @@ export default function Home() {
     section6: false,
   });
 
+  const getTargetElement = () => document.getElementById("pdf");
+
+  const handleGeneratePdf = () => {
+    let clone = getTargetElement();
+    clone.cloneNode(true);
+    clone.style.display = "unset";
+    generatePDF(getTargetElement, {
+      filename: `CV_${lngs[i18n.resolvedLanguage].nativeName}_Martin_Axelsson.pdf`,
+      page: {
+        format: "A4",
+      },
+    });
+    clone.remove();
+  };
+
   const expandMenu = section => {
     setExpand(p => ({ ...p, [section]: !p[section] }));
   };
@@ -81,6 +100,10 @@ export default function Home() {
 
   return (
     <>
+      <div id="pdf" style={{ display: "none", background: "#f2f2f2" }}>
+        <Pdf />
+      </div>
+
       <section className="intro">
         <div style={{ background: "#ceeab9" }} className="border"></div>
         <div className="intro-wrapper">
@@ -107,6 +130,14 @@ export default function Home() {
                   >
                     linkedin.com/in/martin-axelsson
                   </a>
+                  <div
+                    className="email-link"
+                    data-html2canvas-ignore="true"
+                    onClick={() => handleGeneratePdf()}
+                  >
+                    PDF&nbsp;
+                    <Download sx={{ fontSize: 18 }} />
+                  </div>
                 </>
               ) : (
                 <Stack direction="row" spacing={1} mt={2}>
@@ -130,6 +161,15 @@ export default function Home() {
                   >
                     <b>LinkedIn</b>
                   </Button>
+                  <Button
+                    sx={{ background: "rgb(0, 76, 118)" }}
+                    onClick={() => handleGeneratePdf()}
+                    size="small"
+                    variant="contained"
+                    endIcon={<Download />}
+                  >
+                    <b>PDF</b>
+                  </Button>
                 </Stack>
               )}
               <AlertDialogSlide />
@@ -139,7 +179,7 @@ export default function Home() {
                 <div
                   key={lng}
                   style={{
-                    color: i18n.resolvedLanguage === lng ? "black" : "grey",
+                    color: i18n.resolvedLanguage === lng ? "#1a1a1a" : "grey",
                   }}
                   onClick={() => i18n.changeLanguage(lng)}
                 >
@@ -151,6 +191,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="section-wrapper">
         <div style={{ background: "#e8e6b0" }} className="border"></div>
         <div>
@@ -301,7 +342,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section style={{ paddingBottom: "100px" }} className="section-wrapper">
+      <section style={{ paddingBottom: "70px" }} className="section-wrapper">
         <div style={{ background: "#C7E9E1" }} className="border"></div>
         <div>
           {matches_sm ? (

@@ -57,7 +57,6 @@ export default function Contact() {
         message: false,
       }));
     }
-    console.log("validate");
 
     if (Object.values(isValid).every(Boolean)) {
       return true;
@@ -68,11 +67,8 @@ export default function Contact() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(e.target);
-    console.log(contact);
 
     if (validate()) {
-      console.log("valid");
       setIsLoading(true);
       setStatus({ ...status, message: "", status: "" });
       emailjs.sendForm(service, template, e.target, user).then(
@@ -97,7 +93,6 @@ export default function Contact() {
         }
       );
     } else {
-      console.log("not valid");
       setStatus({
         ...status,
         message: t("contact.validation"),
@@ -105,10 +100,6 @@ export default function Contact() {
       });
     }
   };
-
-  useEffect(() => {
-    console.log(status);
-  }, [contact]);
 
   return (
     <>
