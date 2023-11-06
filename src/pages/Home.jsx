@@ -161,7 +161,7 @@ export default function Home() {
                   >
                     <b>LinkedIn</b>
                   </Button>
-                  <Button
+                  {/* <Button
                     sx={{ background: "rgb(0, 76, 118)" }}
                     onClick={() => handleGeneratePdf()}
                     size="small"
@@ -169,7 +169,7 @@ export default function Home() {
                     endIcon={<Download />}
                   >
                     <b>PDF</b>
-                  </Button>
+                  </Button> */}
                 </Stack>
               )}
               <AlertDialogSlide />
@@ -200,7 +200,7 @@ export default function Home() {
               -------------------------------------------------------------
             </div>
           ) : (
-            <div className="lines">----------------------------------</div>
+            <div className="lines">-------------------------------</div>
           )}
           <h4>{t("hello.h1")}</h4>
           <p>{t("hello.p1")}</p>
@@ -216,7 +216,7 @@ export default function Home() {
               -------------------------------------------------------------
             </div>
           ) : (
-            <div className="lines">----------------------------------</div>
+            <div className="lines">-------------------------------</div>
           )}
           <h4>{t("experience.h1")}</h4>
           <div className="work-headline">
@@ -296,7 +296,7 @@ export default function Home() {
                 -------------------------------------------------------------
               </div>
             ) : (
-              <div className="lines">----------------------------------</div>
+              <div className="lines">-------------------------------</div>
             )}
             <h4>{t("education.h1")}</h4>
             <p>
@@ -321,7 +321,7 @@ export default function Home() {
                 -------------------------------------------------------------
               </div>
             ) : (
-              <div className="lines">----------------------------------</div>
+              <div className="lines">-------------------------------</div>
             )}
             <h4>{t("skills.h1")}</h4>
             <p>
@@ -350,7 +350,7 @@ export default function Home() {
               -------------------------------------------------------------
             </div>
           ) : (
-            <div className="lines">----------------------------------</div>
+            <div className="lines">-------------------------------</div>
           )}
           <h4>{t("projects.h1")}</h4>
           <div className="other__work-headline" onClick={() => expandMenu("section4")}>
