@@ -32,25 +32,29 @@ export const se = {
         year: "2013 - 2019",
         title: " Administratör",
         place: "PostNord AB",
-        description: "Text Administratör",
+        description:
+          "Under min tid på PostNord Arlanda hade jag ett antal olika roller, bland annat teamleader. Som teamleader var det mitt jobb att planera och övervaka den dagliga verksamheten i produktionen, och delegera uppgifter till anställda för att möta dagliga produktionsdeadlines. En annan roll jag hade var som administrativt stöd till Arlanda terminals produktionschefer, där uppgifterna inkluderade rekrytering av personal, planering av personal över långa tidsperioder och underhåll av vårt interna personalplaneringssystem.",
       },
       work5: {
         year: "2009 - 2011",
         title: " Tryckpressoperatör",
         place: "Intellecta tryckindustri AB",
-        description: "Text Tryckpressoperatör",
+        description:
+          "Efter en praktikperiod på Intellecta tryckindustri AB i samband med min utbildning i grafisk tryckprocess anställdes jag för att operera en Heidelberg 8-färgstryckpress, där vi till största delen tryckte månadsmagasin.",
       },
       work6: {
         year: "2004 - 2007",
         title: " Terminalarbetare",
         place: "PostNord AB",
-        description: "Text Terminalarbetare",
+        description:
+          "Arbetet som terminalarbetare bestod i att sortera och hantera inkommande post från olika länder.",
       },
       work7: {
         year: "2001 - 2003",
         title: " Orginalare",
         place: "Lowe Forever AB",
-        description: "Text orginalare",
+        description:
+          "Började som allroundarbetare med olika uppgifter och fick gradvis mer ansvar för att till slut huvudsakligen arbeta med layout av broadsheet-tidningar.",
       },
     },
     education: {
@@ -70,6 +74,7 @@ export const se = {
         "Scriptwave är en Midi kompatibel synth utvecklad i React med hjälp av Web Audio API, den är spelbar via ett dator tangentbord eller genom att koppla in en Midi enhet via en USB port.",
       scriptbeat:
         "Scriptbeat är en interaktiv browserbaserad trummaskin och sequencer byggd i Javascript med hjälp av Web Audio API.",
+      vongoose: 'Websida för mitt music projekt "Von goose".',
     },
     contact: {
       emailBtn: "Maila mig",

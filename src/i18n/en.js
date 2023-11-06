@@ -12,7 +12,7 @@ export const en = {
       work1: {
         h1: "2021 -- Front-end developer",
         h2: "Zapote Consulting AB",
-        p1: "During my time at Zapote, I ve had the opportunity to engage in a diverse array of projects. For instance, I was responsible for planning and developing the frontend of an application called bockat.se, which was designed for tracking glass deliveries on stands. My role involved creating a user-friendly interface that facilitated seamless tracking through the scanning of QR codes on the stands. This application was constructed using React and Material UI, with a Node.js backend.",
+        p1: "During my time at Zapote, I´ve had the opportunity to engage in a diverse array of projects. For instance, I was responsible for planning and developing the frontend of an application called bockat.se, which was designed for tracking glass deliveries on stands. My role involved creating a user-friendly interface that facilitated seamless tracking through the scanning of QR codes on the stands. This application was constructed using React and Material UI, with a Node.js backend.",
         p2: "Additionally, I play an active role in the development and maintenance of our application system, Apply.se. This platform serves as a means for applicants to seek grants from various foundations. As part of this role, I closely collaborate with our customers (foundations) to address their specific needs and requirements, ensuring the implementation of frontend changes according to their preferences. In Apply, we use Aurelia and Angular for frontend, in conjunction with Bootstrap for styling.",
         p3: "Furthermore I am continuously working with Episurf Medical, a medical company specializing in developing kneejoint implants. In this capacity, I develop frontend for both new and already existing modules of their production system. I assumed a lead front-end role in implementing new product flows for certain projects within the production system. This project uses a combination of frontend techniques, primarily relying on Aurelia, with certain modules developed using React.",
       },
@@ -31,14 +31,14 @@ export const en = {
         title: " Administrator/teamleader",
         place: "PostNord AB",
         description:
-          "As an administrator/teamleader at PostNord Arlanda tasks included recruiting staff, staffplanning and maintaining our inhouse staffplanning system.",
+          "During my time at PostNord Arlanda, i had a number of different roles, among others teamleader. As a teamleader it was my job to plan and oversee day to day operations in production, and delegate tasks to employees in order to meet dayly production deadlines. Another role i had was as an Administrative support to Arlanda terminals productionmanagers, where tasks included recruiting staff, planning staff over long periods of time and maintaining our internal staffplanning system.",
       },
       work5: {
         year: "2009 - 2011",
         title: " Printing press operator",
         place: "Intellecta tryckindustri AB",
         description:
-          "At Intellecta i was operating a Heidelberg 8-color printingpress, printing for the most part monthly magazines.",
+          "After an internship at Intellecta tryckindustri AB connected to my education in graphical printing, I was hired to operate a Heidelberg 8-color printingpress, printing for the most part monthly magazines.",
       },
       work6: {
         year: "2004 - 2007",
@@ -52,7 +52,7 @@ export const en = {
         title: " Junior Graphic designer",
         place: "Lowe Forever AB",
         description:
-          "Started as an all-rounder doing various tasks, and gradually in the end mainly doing layout to advertising broadsheet papers.",
+          "Started out as an all-rounder doing various tasks, and gradually advancing to more responsibility and in the end mainly doing layout to advertising broadsheet papers.",
       },
     },
     education: {
@@ -72,6 +72,7 @@ export const en = {
         "Scriptwave is a Midi compatible synth made with React and the Web Audio API, it is playable via your computer keyboard or a Midi device connected through your USB port.",
       scriptbeat:
         "Scriptbeat is an interactive browserbased drummachine and sequencer built with Javascript and the Web Audio API.",
+      vongoose: 'Webpage for my music project "Von goose".',
     },
     contact: {
       emailBtn: "Email me",
