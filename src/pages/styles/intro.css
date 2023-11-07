@@ -42,6 +42,10 @@
   text-decoration: none;
 }
 
+.intro__link:hover {
+  color: rgb(3, 34, 40);
+}
+
 .intro__language {
   display: flex;
   justify-content: space-between;

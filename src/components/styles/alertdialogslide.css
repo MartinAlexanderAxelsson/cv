@@ -7,6 +7,11 @@
   padding-top: 2px;
   text-decoration: none;
 }
+
+.email-link:hover {
+  color: rgb(3, 34, 40);
+}
+
 .contact-h4 {
   padding-left: 20px;
   font-size: 30px;

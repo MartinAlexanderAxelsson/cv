@@ -112,6 +112,11 @@ p:last-child {
   text-decoration: none;
   padding-bottom: 10px;
 }
+
+.project-link:hover {
+  color: rgb(3, 34, 40);
+}
+
 .project-link-wrapper {
   display: flex;
   align-items: center;

@@ -14,6 +14,7 @@ import {
   GitHub,
   LinkedIn,
   Download,
+  FlashOnRounded,
 } from "@mui/icons-material";
 import { Button, IconButton, Stack } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -28,6 +29,8 @@ export default function Home() {
 
   const matches_sm = useMediaQuery("(min-width:600px)");
   const matches_md = useMediaQuery("(min-width:900px)");
+
+  const [hover, setHover] = useState(false);
 
   const lngs = {
     en: { nativeName: "ENG" },
@@ -78,7 +81,9 @@ export default function Home() {
     clone.cloneNode(true);
     clone.style.display = "unset";
     generatePDF(getTargetElement, {
-      filename: `CV_${lngs[i18n.resolvedLanguage].nativeName}_Martin_Axelsson.pdf`,
+      filename: `CV_${
+        lngs[i18n.resolvedLanguage].nativeName
+      }_Martin_Axelsson.pdf`,
       page: {
         format: "A4",
       },
@@ -86,11 +91,11 @@ export default function Home() {
     clone.remove();
   };
 
-  const expandMenu = section => {
-    setExpand(p => ({ ...p, [section]: !p[section] }));
+  const expandMenu = (section) => {
+    setExpand((p) => ({ ...p, [section]: !p[section] }));
   };
 
-  const goToVideo = video => {
+  const goToVideo = (video) => {
     let url = `https://${video}.vongoo.se`;
 
     if (matches_md) {
@@ -144,7 +149,10 @@ export default function Home() {
                   <Button
                     sx={{ background: "#1a1a1a" }}
                     onClick={() =>
-                      window.open("https://github.com/martinalexanderaxelsson", "_blank")
+                      window.open(
+                        "https://github.com/martinalexanderaxelsson",
+                        "_blank"
+                      )
                     }
                     size="small"
                     variant="contained"
@@ -154,7 +162,12 @@ export default function Home() {
                   </Button>
                   <Button
                     sx={{ background: "#1a1a1a" }}
-                    onClick={() => window.open("https://linkedin.com/in/martin-axelsson", "_blank")}
+                    onClick={() =>
+                      window.open(
+                        "https://linkedin.com/in/martin-axelsson",
+                        "_blank"
+                      )
+                    }
                     size="small"
                     variant="contained"
                     endIcon={<LinkedIn />}
@@ -179,11 +192,20 @@ export default function Home() {
                 <div
                   key={lng}
                   style={{
-                    color: i18n.resolvedLanguage === lng ? "#1a1a1a" : "grey",
+                    color:
+                      i18n.resolvedLanguage !== lng && hover === lng
+                        ? "rgb(0, 76, 118)"
+                        : i18n.resolvedLanguage === lng
+                        ? "#1a1a1a"
+                        : "grey",
                   }}
+                  onMouseEnter={() => setHover(lng)}
+                  onMouseLeave={() => setHover(false)}
                   onClick={() => i18n.changeLanguage(lng)}
                 >
-                  {i18n.resolvedLanguage === lng && <ArrowForwardIos sx={{ fontSize: 12 }} />}
+                  {i18n.resolvedLanguage === lng && (
+                    <ArrowForwardIos sx={{ fontSize: 12 }} />
+                  )}
                   {lngs[lng].nativeName}
                 </div>
               ))}
@@ -223,7 +245,10 @@ export default function Home() {
             <b>
               {t("experience.work1.h1")}
               {!matches_sm && <br />}
-              <span style={{ color: "#427E86" }}> {t("experience.work1.h2")}</span>
+              <span style={{ color: "#427E86" }}>
+                {" "}
+                {t("experience.work1.h2")}
+              </span>
             </b>
           </div>
           <p className="p-under-headline">{t("experience.work1.p1")}</p>
@@ -233,14 +258,20 @@ export default function Home() {
             <b>
               {t("experience.work2.h1")}
               {!matches_sm && <br />}
-              <span style={{ color: "#427E86" }}> {t("experience.work2.h2")}</span>
+              <span style={{ color: "#427E86" }}>
+                {" "}
+                {t("experience.work2.h2")}
+              </span>
             </b>
           </div>
           <p className="p-under-headline">{t("experience.work2.p1")}</p>
           <div className="work-headline">
             {t("experience.work3.h1")}
             {!matches_sm && <br />}
-            <span style={{ color: "#427E86" }}> {t("experience.work3.h2")}</span>
+            <span style={{ color: "#427E86" }}>
+              {" "}
+              {t("experience.work3.h2")}
+            </span>
           </div>
           <p className="p-under-headline">{t("experience.work3.p1")}</p>
           <div className="other-work__wrapper">
@@ -254,9 +285,17 @@ export default function Home() {
                   >
                     {s.year} {!matches_sm && <br />}
                     {s.title}
-                    {matches_sm && <span style={{ color: "#427E86" }}>&nbsp;{s.place}</span>}
+                    {matches_sm && (
+                      <span style={{ color: "#427E86" }}>&nbsp;{s.place}</span>
+                    )}
                     {matches_sm ? (
-                      <div>{expand[`section${i}`] ? <ArrowDropUp /> : <ArrowDropDown />}</div>
+                      <div>
+                        {expand[`section${i}`] ? (
+                          <ArrowDropUp />
+                        ) : (
+                          <ArrowDropDown />
+                        )}
+                      </div>
                     ) : (
                       <IconButton variant="contained">
                         {expand[`section${i}`] ? (
@@ -353,7 +392,10 @@ export default function Home() {
             <div className="lines">-------------------------------</div>
           )}
           <h4>{t("projects.h1")}</h4>
-          <div className="other__work-headline" onClick={() => expandMenu("section4")}>
+          <div
+            className="other__work-headline"
+            onClick={() => expandMenu("section4")}
+          >
             Scriptwave
             <div>{expand.section4 ? <ArrowDropUp /> : <ArrowDropDown />}</div>
           </div>
@@ -362,16 +404,24 @@ export default function Home() {
               <div className="project-wrapper">
                 <div className="project-text">{t("projects.scriptwave")}</div>
                 <div className="project-link-wrapper">
-                  <a target="_blank" href="https://scriptwave.vongoo.se" className="project-link">
+                  <a
+                    target="_blank"
+                    href="https://scriptwave.vongoo.se"
+                    className="project-link"
+                  >
                     Go to Scriptwave&nbsp;
                     <ArrowForward sx={{ fontSize: 18 }} />
                   </a>
                   {muted.scriptwave ? (
-                    <IconButton onClick={() => setMuted({ ...muted, scriptwave: false })}>
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptwave: false })}
+                    >
                       <VolumeOff />
                     </IconButton>
                   ) : (
-                    <IconButton onClick={() => setMuted({ ...muted, scriptwave: true })}>
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptwave: true })}
+                    >
                       <VolumeUp />
                     </IconButton>
                   )}
@@ -389,7 +439,10 @@ export default function Home() {
               </div>
             </Fade>
           )}
-          <div className="other__work-headline" onClick={() => expandMenu("section5")}>
+          <div
+            className="other__work-headline"
+            onClick={() => expandMenu("section5")}
+          >
             Scriptbeat
             <div>{expand.section5 ? <ArrowDropUp /> : <ArrowDropDown />}</div>
           </div>
@@ -398,16 +451,24 @@ export default function Home() {
               <div className="project-wrapper">
                 <div className="project-text">{t("projects.scriptbeat")}</div>
                 <div className="project-link-wrapper">
-                  <a target="_blank" href="https://scriptbeat.vongoo.se" className="project-link">
+                  <a
+                    target="_blank"
+                    href="https://scriptbeat.vongoo.se"
+                    className="project-link"
+                  >
                     Go to Scriptbeat&nbsp;
                     <ArrowForward sx={{ fontSize: 18 }} />
                   </a>
                   {muted.scriptbeat ? (
-                    <IconButton onClick={() => setMuted({ ...muted, scriptbeat: false })}>
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptbeat: false })}
+                    >
                       <VolumeOff />
                     </IconButton>
                   ) : (
-                    <IconButton onClick={() => setMuted({ ...muted, scriptbeat: true })}>
+                    <IconButton
+                      onClick={() => setMuted({ ...muted, scriptbeat: true })}
+                    >
                       <VolumeUp />
                     </IconButton>
                   )}
