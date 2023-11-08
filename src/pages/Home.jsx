@@ -345,10 +345,10 @@ export default function Home() {
               <b>{t("education.p1")}</b>
             </p>
             <p>
-              <b>2007 - 2008 Industriell grafisk tryckprocess, Xenter Tumba</b>
+              <b>2008 - 2010 Industriell grafisk tryckprocess, Xenter Tumba</b>
             </p>
             <p>
-              <b>1999 - 2001 Medialinje, Rudbecks gymnasium</b>
+              <b>1999 - 2002 Medialinje, Rudbecks gymnasium</b>
             </p>
           </div>
         </section>

@@ -34,21 +34,21 @@ export const en = {
           "During my time at PostNord Arlanda, i had a number of different roles, among others teamleader. As a teamleader it was my job to plan and oversee day to day operations in production, and delegate tasks to employees in order to meet dayly production deadlines. Another role i had was as an Administrative support to Arlanda terminals productionmanagers, where tasks included recruiting staff, planning staff over long periods of time and maintaining our internal staffplanning system.",
       },
       work5: {
-        year: "2009 - 2011",
+        year: "2010 - 2012",
         title: " Printing press operator",
         place: "Intellecta tryckindustri AB",
         description:
           "After an internship at Intellecta tryckindustri AB connected to my education in graphical printing, I was hired to operate a Heidelberg 8-color printingpress, printing for the most part monthly magazines.",
       },
       work6: {
-        year: "2004 - 2007",
+        year: "2005 - 2008",
         title: " Terminalworker",
         place: "PostNord AB",
         description:
           "Working as a terminalworker consisted of sorting and handling inbound mail from various countries.",
       },
       work7: {
-        year: "2001 - 2003",
+        year: "2002 - 2004",
         title: " Junior Graphic designer",
         place: "Lowe Forever AB",
         description:

@@ -36,21 +36,21 @@ export const se = {
           "Under min tid på PostNord Arlanda hade jag ett antal olika roller, bland annat teamleader. Som teamleader var det mitt jobb att planera och övervaka den dagliga verksamheten i produktionen, och delegera uppgifter till anställda för att möta dagliga produktionsdeadlines. En annan roll jag hade var som administrativt stöd till Arlanda terminals produktionschefer, där uppgifterna inkluderade rekrytering av personal, planering av personal över långa tidsperioder och underhåll av vårt interna personalplaneringssystem.",
       },
       work5: {
-        year: "2009 - 2011",
+        year: "2010 - 2012",
         title: " Tryckpressoperatör",
         place: "Intellecta tryckindustri AB",
         description:
           "Efter en praktikperiod på Intellecta tryckindustri AB i samband med min utbildning i grafisk tryckprocess anställdes jag för att operera en Heidelberg 8-färgstryckpress, där vi till största delen tryckte månadsmagasin.",
       },
       work6: {
-        year: "2004 - 2007",
+        year: "2005 - 2008",
         title: " Terminalarbetare",
         place: "PostNord AB",
         description:
           "Arbetet som terminalarbetare bestod i att sortera och hantera inkommande post från olika länder.",
       },
       work7: {
-        year: "2001 - 2003",
+        year: "2002 - 2004",
         title: " Orginalare",
         place: "Lowe Forever AB",
         description:
