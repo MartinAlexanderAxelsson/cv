@@ -13,7 +13,7 @@ export const en = {
       work1: {
         h1: "2023 -- Front-end developer intern",
         h2: "Terralabs.com",
-        p1: "Currently engaged in an internship at a startup called Terralabs. My primary goal here is to gain valuable experience in a dynamic work environment. This experience serves as a dedicated effort to enhance my proficiency and adaptability within the industry. Open to new opportunities, I am actively seeking roles that allow me to further apply and refine my skills in creating compelling user experiences. At Terralabs we are working with React and Typescript against a Python backend",
+        p1: "Currently engaged in an internship at a startup called Terralabs. My primary goal here is to gain valuable experience in a dynamic work environment. This experience serves as a dedicated effort to enhance my proficiency and adaptability within the industry. Open to new opportunities, I am actively seeking roles that allow me to further apply and refine my skills in creating compelling user experiences. At Terralabs we are working with React and Typescript against a Python backend.",
       },
       work2: {
         h1: "2021 - 2023 Front-end developer",
