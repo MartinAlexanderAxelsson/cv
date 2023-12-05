@@ -13,7 +13,7 @@ export const se = {
       work1: {
         h1: "2023 -- Frontend-utvecklare intern",
         h2: "Terralabs.com",
-        p1: "För närvarande gör jag en praktik på en startup som heter Terralabs, där mitt huvudsyfte är att skaffa värdefull erfarenhet i en dynamisk arbetsmiljö. Denna erfarenhet representerar en dedikerad insats för att förbättra min kompetens och anpassningsförmåga inom branschen. Öppen för nya möjligheter söker jag aktivt efter roller som möjliggör ytterligare tillämpning och förfining av mina färdigheter för att skapa engagerande användarupplevelser.",
+        p1: "För närvarande gör jag en praktik på en startup som heter Terralabs, där mitt huvudsyfte är att skaffa värdefull erfarenhet i en dynamisk arbetsmiljö. Denna erfarenhet representerar en dedikerad insats för att förbättra min kompetens och anpassningsförmåga inom branschen. Öppen för nya möjligheter söker jag aktivt efter roller som möjliggör ytterligare tillämpning och förfining av mina färdigheter för att skapa engagerande användarupplevelser. På Terralabs arbetar vi med React och Typescript mot en Python backend.",
       },
       work2: {
         h1: "2021 - 2023 Frontend-utvecklare",
