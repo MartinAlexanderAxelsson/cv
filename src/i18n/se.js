@@ -11,45 +11,50 @@ export const se = {
     experience: {
       h1: "Erfarenhet.",
       work1: {
-        h1: "2021 -- Frontend-utvecklare",
-        h2: "Zapote Consulting AB",
-        p1: "Hos Zapote har jag haft möjligheten att arbeta med en rad olika projekt, som att planera och utveckla frontend för en applikation (bockat.se) dedikerad till spårning av glasleveranser på stativ. Detta innebar att skapa ett användarvänligt gränssnitt som möjliggjorde sömlös spårning genom skanning av QR-koder på stativen. Byggd med React och Material UI med en Node.js backend.",
-        p2: "Jag bidrar aktivt till vårt applikationssystem (Apply.se), som fungerar som en plattform för att ansöka om bidrag från olika stiftelser. Denna roll innebär nära samarbete med kunder (stiftelser), där jag implementerar frontend ändringar för att möta deras specifika krav och önskemål. Min förmåga att arbeta nära kunder säkerställer att deras behov alltid blir tillgodosedda. I Apply använder vi Aurelia och Angular för frontend tillsammans med Bootstrap för styling.",
-        p3: "Dessutom arbetar jag kontinuerligt med Episurf Medical, ett företag som specialiserar sig på utveckling av knäledsimplantat. För Episurf har jag utvecklat frontend för både nya och befintliga moduler i deras produktionssystem. I vissa fall har jag antagit en lead frontend roll och implementerat nya produktflöden i deras produktionssystem. Frontend-teknikerna som används här är främst Aurelia med vissa moduler byggda i React.",
+        h1: "2023 -- Frontend-utvecklare intern",
+        h2: "Terralabs.com",
+        p1: "För närvarande gör jag en praktik på en startup som heter Terralabs, där mitt huvudsyfte är att skaffa värdefull erfarenhet i en dynamisk arbetsmiljö. Denna erfarenhet representerar en dedikerad insats för att förbättra min kompetens och anpassningsförmåga inom branschen. Öppen för nya möjligheter söker jag aktivt efter roller som möjliggör ytterligare tillämpning och förfining av mina färdigheter för att skapa engagerande användarupplevelser.",
       },
       work2: {
+        h1: "2021 - 2023 Frontend-utvecklare",
+        h2: "Zapote Consulting AB",
+        p1: "Hos Zapote har jag haft möjligheten att arbeta med en rad olika projekt, som att planera och utveckla frontend för en applikation (bockat.se) dedikerad till spårning av glasleveranser på stativ. Detta innebar att skapa ett användarvänligt gränssnitt som möjliggjorde sömlös spårning genom skanning av QR-koder på stativen. Byggd med React och Material UI med en Node.js backend.",
+        p2: "Jag bidrog aktivt till vårt applikationssystem (Apply.se), som fungerar som en plattform för att ansöka om bidrag från olika stiftelser. Denna roll innebar nära samarbete med kunder (stiftelser), där jag implementerade frontend ändringar för att möta deras specifika krav och önskemål. Min förmåga att arbeta nära kunder säkerställde att deras behov alltid blev tillgodosedda. I Apply använde vi Aurelia och Angular för frontend tillsammans med Bootstrap för styling.",
+        p3: "Dessutom arbetade jag kontinuerligt med Episurf Medical, ett företag som specialiserar sig på utveckling av knäledsimplantat. För Episurf har jag utvecklat frontend för både nya och befintliga moduler i deras produktionssystem. I vissa fall har jag antagit en lead frontend roll och implementerat nya produktflöden i deras produktionssystem. Frontend-teknikerna som används här är främst Aurelia med vissa moduler byggda i React.",
+      },
+      work3: {
         h1: "2021 Frontend-utvecklare intern",
         h2: "Joyride podcast",
         p1: "Under min praktik på Joyride var jag ansvarig för att bygga en applikation som möjliggjorde för Joyride att kunde ladda upp och publicera videopisoder av sin podcast. Jag var ansvarig för att utforma applikationens arkitektur och designa hela systemet, där frontend byggdes i React och backend i Php.",
       },
-      work3: {
+      work4: {
         h1: "2020 Frontend-utvecklare intern",
         h2: "Yayloh.com",
         p1: "Yayloh tillhandahåller ett system för hantering av returer för e-handlare. Som en del av ett team med 6 utvecklare bestod vårt arbete av frontend uppgifter i systemets digitala returformulär och systemets dashboard, där kunder hanterade statistik och data relaterat till returnerade varor. Applikationen är byggd i React med en Python backend.",
       },
 
-      work4: {
+      work5: {
         year: "2013 - 2019",
         title: " Administratör",
         place: "PostNord AB",
         description:
           "Under min tid på PostNord Arlanda hade jag ett antal olika roller, bland annat teamleader. Som teamleader var det mitt jobb att planera och övervaka den dagliga verksamheten i produktionen, och delegera uppgifter till anställda för att möta dagliga produktionsdeadlines. En annan roll jag hade var som administrativt stöd till Arlanda terminals produktionschefer, där uppgifterna inkluderade rekrytering av personal, planering av personal över långa tidsperioder och underhåll av vårt interna personalplaneringssystem.",
       },
-      work5: {
+      work6: {
         year: "2010 - 2012",
         title: " Tryckpressoperatör",
         place: "Intellecta tryckindustri AB",
         description:
           "Efter en praktikperiod på Intellecta tryckindustri AB i samband med min utbildning i grafisk tryckprocess anställdes jag för att operera en Heidelberg 8-färgstryckpress, där vi till största delen tryckte månadsmagasin.",
       },
-      work6: {
+      work7: {
         year: "2005 - 2008",
         title: " Terminalarbetare",
         place: "PostNord AB",
         description:
           "Arbetet som terminalarbetare bestod i att sortera och hantera inkommande post från olika länder.",
       },
-      work7: {
+      work8: {
         year: "2002 - 2004",
         title: " Orginalare",
         place: "Lowe Forever AB",

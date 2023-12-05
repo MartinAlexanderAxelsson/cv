@@ -9,45 +9,51 @@ export const en = {
     },
     experience: {
       h1: "Experience.",
+
       work1: {
-        h1: "2021 -- Front-end developer",
-        h2: "Zapote Consulting AB",
-        p1: "During my time at Zapote, I´ve had the opportunity to engage in a diverse array of projects. For instance, I was responsible for planning and developing the frontend of an application called bockat.se, which was designed for tracking glass deliveries on stands. My role involved creating a user-friendly interface that facilitated seamless tracking through the scanning of QR codes on the stands. This application was constructed using React and Material UI, with a Node.js backend.",
-        p2: "Additionally, I play an active role in the development and maintenance of our application system, Apply.se. This platform serves as a means for applicants to seek grants from various foundations. As part of this role, I closely collaborate with our customers (foundations) to address their specific needs and requirements, ensuring the implementation of frontend changes according to their preferences. In Apply, we use Aurelia and Angular for frontend, in conjunction with Bootstrap for styling.",
-        p3: "Furthermore I am continuously working with Episurf Medical, a medical company specializing in developing kneejoint implants. In this capacity, I develop frontend for both new and already existing modules of their production system. I assumed a lead front-end role in implementing new product flows for certain projects within the production system. This project uses a combination of frontend techniques, primarily relying on Aurelia, with certain modules developed using React.",
+        h1: "2023 -- Front-end developer intern",
+        h2: "Terralabs.com",
+        p1: "Currently engaged in an internship at a startup called Terralabs. My primary goal here is to gain valuable experience in a dynamic work environment. This experience serves as a dedicated effort to enhance my proficiency and adaptability within the industry. Open to new opportunities, I am actively seeking roles that allow me to further apply and refine my skills in creating compelling user experiences.",
       },
       work2: {
+        h1: "2021 - 2023 Front-end developer",
+        h2: "Zapote Consulting AB",
+        p1: "During my time at Zapote, I had the opportunity to engage in a diverse array of projects. For instance, I was responsible for planning and developing the frontend of an application called bockat.se, which was designed for tracking glass deliveries on stands. My role involved creating a user-friendly interface that facilitated seamless tracking through the scanning of QR codes on the stands. This application was constructed using React and Material UI, with a Node.js backend.",
+        p2: "Additionally, I played an active role in the development and maintenance of our application system, Apply.se. This platform serves as a means for applicants to seek grants from various foundations. As part of this role, I closely collaborated with our customers (foundations) to address their specific needs and requirements, ensuring the implementation of frontend changes according to their preferences. In Apply, we use Aurelia and Angular for frontend, in conjunction with Bootstrap for styling.",
+        p3: "Furthermore I was continuously working with Episurf Medical, a medical company specializing in developing kneejoint implants. In this capacity, I developed frontend for both new and already existing modules of their production system. In some cases I assumed a lead front-end role in implementing new product flows for certain projects within the production system. This project uses a combination of frontend techniques, primarily relying on Aurelia, with certain modules developed using React.",
+      },
+      work3: {
         h1: "2021 Front-end developer intern",
         h2: "Joyride podcast",
         p1: "During my internship at Joyride I was responsible for building an application that allowed Joyride to upload and publish video episodes of their podcast. I was responsible for crafting the application s architecture and designing the entire system, building the frontend in React and the backend in Php.",
       },
-      work3: {
+      work4: {
         h1: "2020 Front-end developer intern",
         h2: "Yayloh.com",
         p1: "Yayloh is providing a returns management system for e-retailers. As a part of a team of 6 developers our work consisted of frontend tasks in the system s digital returns form and the system s dashboard, where customers managed statistics and data related to returned goods.. The application is built in React with a Python backend.",
       },
-      work4: {
+      work5: {
         year: "2013 - 2019",
         title: " Administrator/teamleader",
         place: "PostNord AB",
         description:
           "During my time at PostNord Arlanda, i had a number of different roles, among others teamleader. As a teamleader it was my job to plan and oversee day to day operations in production, and delegate tasks to employees in order to meet dayly production deadlines. Another role i had was as an Administrative support to Arlanda terminals productionmanagers, where tasks included recruiting staff, planning staff over long periods of time and maintaining our internal staffplanning system.",
       },
-      work5: {
+      work6: {
         year: "2010 - 2012",
         title: " Printing press operator",
         place: "Intellecta tryckindustri AB",
         description:
           "After an internship at Intellecta tryckindustri AB connected to my education in graphical printing, I was hired to operate a Heidelberg 8-color printingpress, printing for the most part monthly magazines.",
       },
-      work6: {
+      work7: {
         year: "2005 - 2008",
         title: " Terminalworker",
         place: "PostNord AB",
         description:
           "Working as a terminalworker consisted of sorting and handling inbound mail from various countries.",
       },
-      work7: {
+      work8: {
         year: "2002 - 2004",
         title: " Junior Graphic designer",
         place: "Lowe Forever AB",

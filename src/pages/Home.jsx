@@ -39,28 +39,28 @@ export default function Home() {
 
   const sections = {
     section0: {
-      year: t("experience.work4.year"),
-      title: t("experience.work4.title"),
-      place: t("experience.work4.place"),
-      description: t("experience.work4.description"),
-    },
-    section1: {
       year: t("experience.work5.year"),
       title: t("experience.work5.title"),
       place: t("experience.work5.place"),
       description: t("experience.work5.description"),
     },
-    section2: {
+    section1: {
       year: t("experience.work6.year"),
       title: t("experience.work6.title"),
       place: t("experience.work6.place"),
       description: t("experience.work6.description"),
     },
-    section3: {
+    section2: {
       year: t("experience.work7.year"),
       title: t("experience.work7.title"),
       place: t("experience.work7.place"),
       description: t("experience.work7.description"),
+    },
+    section3: {
+      year: t("experience.work8.year"),
+      title: t("experience.work8.title"),
+      place: t("experience.work8.place"),
+      description: t("experience.work8.description"),
     },
   };
   const [muted, setMuted] = useState({ scriptwave: true, scriptbeat: true });
@@ -252,8 +252,7 @@ export default function Home() {
             </b>
           </div>
           <p className="p-under-headline">{t("experience.work1.p1")}</p>
-          <p>{t("experience.work1.p2")}</p>
-          <p>{t("experience.work1.p3")}</p>
+
           <div className="work-headline">
             <b>
               {t("experience.work2.h1")}
@@ -265,15 +264,28 @@ export default function Home() {
             </b>
           </div>
           <p className="p-under-headline">{t("experience.work2.p1")}</p>
+          <p>{t("experience.work2.p2")}</p>
+          <p>{t("experience.work2.p3")}</p>
           <div className="work-headline">
-            {t("experience.work3.h1")}
+            <b>
+              {t("experience.work3.h1")}
+              {!matches_sm && <br />}
+              <span style={{ color: "#427E86" }}>
+                {" "}
+                {t("experience.work3.h2")}
+              </span>
+            </b>
+          </div>
+          <p className="p-under-headline">{t("experience.work3.p1")}</p>
+          <div className="work-headline">
+            {t("experience.work4.h1")}
             {!matches_sm && <br />}
             <span style={{ color: "#427E86" }}>
               {" "}
-              {t("experience.work3.h2")}
+              {t("experience.work4.h2")}
             </span>
           </div>
-          <p className="p-under-headline">{t("experience.work3.p1")}</p>
+          <p className="p-under-headline">{t("experience.work4.p1")}</p>
           <div className="other-work__wrapper">
             {Object.values(sections).map((s, i) => {
               return (
@@ -366,7 +378,7 @@ export default function Home() {
             <p>
               <b>{t("skills.text.h1")}</b>
               <br />
-              Javascript, React, Aurelia, Node.js, CSS/SCSS
+              Javascript, React, Typescript, Aurelia, Node.js, CSS/SCSS
             </p>
             <p>
               <b>{t("skills.text.h2")}</b>
